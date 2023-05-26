@@ -1,5 +1,4 @@
 // Express Module laden
-const { error } = require('console');
 const express = require('express');                     //Express Modul
 const app = express();                                  //Eine Instanz der Express-App erstellen
 app.use(express.json());                                //Anforderungen mit JSON-Daten zu parsen

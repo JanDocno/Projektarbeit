@@ -37,20 +37,20 @@ Eine Instanz der OpenAIApi-Klasse wird erstellt und die Configuration-Instanz ü
 
 ```java script
 // Routen definieren
-app.post('/', async (req, res) => {                                             //POST-Anfrage auf den Endpunkt /.req = request und res= response
-    try{                                                                        //Beginn eines try-catch-Blocks zur Fehlerbehandlung
-        const response = await openai.createCompletion({                        //Aufruf an die OpenAI-API, um Textgenerierung durchzuführen
-            model: "text-davinci-003",                                          //Das Modell "text-davinci-003" wird verwendet
+app.post('/', async (req, res) => {                         //POST-Anfrage auf den Endpunkt /.req = request und res= response
+    try{                                                    //Beginn eines try-catch-Blocks zur Fehlerbehandlung
+        const response = await openai.createCompletion({    //Aufruf an die OpenAI-API, um Textgenerierung durchzuführen
+            model: "text-davinci-003",                      //Das Modell "text-davinci-003" wird verwendet
             prompt: "Hello OPEN AI API!",
             max_tokens: 7,
           });
           
-    return res.status(200).json({                                               //Sendet eine erfolgreiche Antwort mit dem generierten Text an den Client.
+    return res.status(200).json({                            //Sendet eine erfolgreiche Antwort mit dem generierten Text an den Client.
             success: true,
             data: response.data.choices[0].text,
         });
-    }catch(error){                                                              //Fangen von Fehlern, falls welche auftreten.
-        return res.status(400).json({                                           //Fehlerantwort an den Client. Fehler wird aus der API-Antwort oder als allgemeine Fehlermeldung zurückgegeben.
+    }catch(error){                                           //Fangen von Fehlern, falls welche auftreten.
+        return res.status(400).json({                        //Fehlerantwort an den Client. Fehler wird aus der API-Antwort oder als allgemeine Fehlermeldung zurückgegeben.
             success: false,                                                     
             error: error.response
             ? error.response.data: "Server Problem",

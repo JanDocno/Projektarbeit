@@ -1,4 +1,6 @@
 # Auswahl des KI-Modells und Entwicklung der interaktiven Anwendung
+Die folgenden Seiten beinhalten die Dokumentation meiner herangehensweise zum erstellen einer interaktiven Anwendung des ausgewählten KI-Modells Dall E.
+
 # Zugriff auf die API von Open AI
 
 Um die Verbindung zu der API von Open AI zu testen, wird zunächst an zwei einfachen Beispielen der Workflow erklärt.

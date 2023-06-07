@@ -15,7 +15,7 @@ Die KI gestützte Plattformen OpenAI DALL-E 2 ist in der Lage, Bilder auf Grundl
 Der Zugang zur API kann hier beantragt werden: 
 https://platform.openai.com
 
-| Input              | Mask                | Output                    |
+| Input                     | Mask                      | Output                    |
 | ------------------------- | ------------------------- | ------------------------- |
 | ![Beschreibung 1](https://cdn.openai.com/API/images/guides/image_edit_original.webp) | ![Beschreibung 2](https://cdn.openai.com/API/images/guides/image_edit_mask.webp) | ![Beschreibung 3](https://cdn.openai.com/API/images/guides/image_edit_output.webp)|
 

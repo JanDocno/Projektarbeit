@@ -1,5 +1,5 @@
 # Auswahl des KI-Modells und Entwicklung der interaktiven Anwendung
-Die folgenden Seiten beinhalten die Dokumentation meiner herangehensweise zum erstellen einer interaktiven Anwendung des ausgewählten KI-Modells Dall E.
+Die folgenden Seiten beinhalten die Dokumentation zum Erstellen einer interaktiven Anwendung des ausgewählten KI-Modells Dall E.
 
 # Zugriff auf die API von Open AI
 
